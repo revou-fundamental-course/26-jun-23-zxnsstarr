@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="D:\Visual_Studio\Tugas\img\brand.png">
+    <link rel="stylesheet" href="img">
+    <title>E-Groceries</title>
+</head>
+<body>
+    <header>
+        <!--Navigation-->
+        <a href="#!" class="brand">Brand</a>
+        <nav>
+            <ul>
+                <li  class="navHome">
+                    <a href="#!">Home</a>
+                </li>
+                <li  class="navOurpack">
+                    <a href="#!">Our Package</a>
+                </li>
+                <li  class="navCallus">
+                    <a href="#!">Call Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Heading Content-->
+        <div class="headContent">
+            <h1>Top Rated E-Groceries Shop In Indonesian</h1>
+            <p>Every day with best ingredients</p>
+        </div>
+        <div class="row">
+            <!--left-column-->
+            <div class="left-column">
+                <!--Slide Show-->
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="D:\Visual_Studio\Tugas\img\image-content.jpg">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="D:\Visual_Studio\Tugas\img\image-content2.jpg">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="D:\Visual_Studio\Tugas\img\image-content3.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                <!--User-->
+                <div class="user">
+                    <p class="deskripsi">"Setiap hari beli sayur fresh disini"</p>
+                    <img src="D:\Visual_Studio\Tugas\img\user.png" alt="" class="userIcon">
+                    <div class="labelUser">
+                        <h3 class="username">Florence Hughes</h3>
+                        <p class="state">Ibu Rumah tangga, 28</p>
+                    </div>
+                </div>
+            </div>
+            <!--Right-column-->
+            <div class="right-column">
+                <!--Form-->
+                <form action="/" method="get">
+                    <div class="card">
+                        <h1 class="contact-card">Contact Us</h1>
+                        <p class="info-card">Sales akan menghubungi anda 1x24<br>Jam setelah data kami terima</p>
+                        <div class="nama">
+                            <label for="nama">Your Name:</label>
+                            <input type="text" id="name" placeholder="First and last name" required>
+                        </div>
+                        <div class="email">
+                            <label for="email" class="emaili">Email Address:</label>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                        <label for="suggest" class="suggest-text">What are you interested in?</label>
+                        <div class="suggest">
+                            <input type="text" disabled placeholder="Select Option" class="suggest-input">
+                            <!--Dropdown-->
+                            <button class="dropdown-button" id="cardown" onpointerdown=dropLinkdown() onpointerleave=dropLinkleave()>
+                                <img src="D:\Visual_Studio\Tugas\img\caret-down.png" alt="" class="caret-down">
+                                <div class="dropdown-link" id="dl">
+                                    <a href="#!">1</a>
+                                    <a href="#!">2</a>
+                                    <a href="#!">3</a>
+                                </div>
+                            </button>
+                        </div>
+                        <button type="button" class="send" onclick=validation()>Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-column">
+                <h1 class="information">Use this space to provide users with more information <br> about your offer.Consider it a follow-up to your headline <br> and explain the benefits of your service or product</h1>
+                <div class="one">
+                    <img src="D:\Visual_Studio\Tugas\img\one.png" alt="" class="img-one">
+                    <p class="text-one">Your first feature, written in the form of <br> a benefits statement.</p>
+                </div>
+                <div class="two">
+                    <img src="D:\Visual_Studio\Tugas\img\two.png" alt="" class="img-two">
+                    <p class="text-two">Your second feature, written in the form of <br> a benefits statement.</p>
+                </div>
+                <div class="three">
+                    <img src="D:\Visual_Studio\Tugas\img\three.png" alt="" class="img-three">
+                    <p class="text-three">Your third feature, written in the form of <br> a benefits statement.</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <p>Our Package</p>
+        </div>
+        <div class="benefit1">
+            <div class="benefit-one">
+                <img src="D:\Visual_Studio\Tugas\img\idea.png" alt="">
+                <h1>Fresh Vegetables</h1>
+                <p>Sayuran segar langsung <br> dari sumber pertanian terbaik</p>
+            </div>
+            <div class="benefit-two">
+                <img src="D:\Visual_Studio\Tugas\img\idea.png" alt="">
+                <h1>Fresh Fruits</h1>
+                <p>Buah dengan kualitas terbaik <br> dari local atau import dan harga yang menarik</p>
+            </div>
+            <div class="benefit-three">
+                <img src="D:\Visual_Studio\Tugas\img\idea.png" alt="">
+                <h1>Instant Delivery</h1>
+                <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+            </div>
+        </div>
+        <div class="benefit2">
+            <div class="benefit-four">
+                <img src="D:\Visual_Studio\Tugas\img\star.png" alt="">
+                <h1>Kitchen Ingredients</h1>
+                <p>Bumbu dapur lengkap untuk <br> keperluan memasak kamu</p>
+            </div>
+            <div class="benefit-five">
+                <img src="D:\Visual_Studio\Tugas\img\star.png" alt="">
+                <h1>Kitchen Set</h1>
+                <p>Segala jenis alat masak <br> untuk membantu kamu memasak</p>
+            </div>
+            <div class="benefit-six">
+                <img src="D:\Visual_Studio\Tugas\img\star.png" alt="">
+                <h1>Bunding Set</h1>
+                <p>Bingung masak apa?Sudah tersedia <br> paket untuk kamu masak di dapur mu</p>
+            </div>
+        </div>
+        <div class="closing">
+            <h1>Your Closing Argument Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur doloribus molestias! Ipsam dolorem minima corporis cupiditate vero sit sapiente veritatis et cumque, officiis quasi tempora saepe at molestiae placeat?</p>
+        </div>
+    </main>
+    <footer>
+            <h1>Brand</h1>
+            <div class="footer-link">
+                <a href="#!">Terms Of Service</a>
+                <a href="#!">Privacy Policy</a>
+            </div>
+            <p>© 2023 brand</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
